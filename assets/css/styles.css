@@ -238,9 +238,14 @@ p {
 }
 
 .button-secondary {
-  border: 1px solid rgba(81, 57, 39, 0.18);
-  background: rgba(255, 255, 255, 0.55);
-  color: var(--text);
+  border: 1px solid transparent;
+  background: #FACC15;
+  color: #1F2937;
+  box-shadow: 0 12px 24px rgba(250, 204, 21, 0.18);
+}
+
+.button-secondary:hover {
+  background: #f7c300;
 }
 
 .hero-panel,
