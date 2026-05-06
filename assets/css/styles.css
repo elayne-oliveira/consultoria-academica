@@ -382,12 +382,26 @@ p {
 }
 
 .service-card strong {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(159, 108, 59, 0.14);
   color: var(--brand-dark);
-  font-size: 1rem;
+  font-size: 0.95rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.service-card strong::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand);
 }
 
 .steps-grid,
