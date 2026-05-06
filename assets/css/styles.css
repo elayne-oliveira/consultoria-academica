@@ -1,15 +1,15 @@
 :root {
-  --bg: #ffffff;
+  --bg: #f8f4ed;
   --surface: rgba(255, 255, 255, 0.82);
   --surface-strong: #ffffff;
-  --text: #1F2937;
-  --muted: #6B7280;
-  --line: rgba(30, 58, 138, 0.14);
-  --brand: #FACC15;
-  --brand-dark: #1E3A8A;
-  --accent: #FACC15;
-  --hero: linear-gradient(135deg, #ffffff 0%, #f0f9ff 48%, #dbeafe 100%);
-  --shadow: 0 24px 60px rgba(30, 58, 138, 0.12);
+  --text: #231815;
+  --muted: #68564d;
+  --line: rgba(106, 81, 63, 0.14);
+  --brand: #9f6c3b;
+  --brand-dark: #724a26;
+  --accent: #d8b38b;
+  --hero: linear-gradient(135deg, #f6efe4 0%, #efe1ce 48%, #d8b38b 100%);
+  --shadow: 0 24px 60px rgba(58, 34, 18, 0.12);
   --radius-xl: 28px;
   --radius-lg: 20px;
   --radius-md: 14px;
@@ -28,7 +28,9 @@ body {
   margin: 0;
   font-family: "Manrope", sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(216, 179, 139, 0.28), transparent 28%),
+    linear-gradient(180deg, #fbf8f3 0%, var(--bg) 100%);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -88,7 +90,6 @@ h3 {
   font-family: "Cormorant Garamond", serif;
   line-height: 1.05;
   letter-spacing: -0.02em;
-  color: var(--brand-dark);
 }
 
 h1 {
@@ -106,7 +107,7 @@ h3 {
 }
 
 .brand-highlight {
-  color: var(--brand);
+  color: #b8841f;
 }
 
 p {
@@ -222,9 +223,9 @@ p {
 }
 
 .button-primary {
-  color: #1F2937;
-  background: linear-gradient(135deg, var(--brand), #F59E0B);
-  box-shadow: 0 16px 30px rgba(250, 204, 21, 0.24);
+  color: #fff8f2;
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+  box-shadow: 0 16px 30px rgba(98, 63, 33, 0.24);
 }
 
 .button-secondary {
@@ -360,7 +361,7 @@ p {
   flex: 0 0 10px;
   margin-top: 8px;
   border-radius: 50%;
-  background: var(--brand);
+  background: linear-gradient(135deg, var(--brand), var(--accent));
 }
 
 .services-grid {
@@ -393,8 +394,8 @@ p {
   height: 46px;
   border-radius: 50%;
   margin-bottom: 18px;
-  background: var(--brand);
-  color: var(--brand-dark);
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+  color: #fff7ef;
   font-weight: 700;
 }
 
