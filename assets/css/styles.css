@@ -73,10 +73,10 @@ a {
   align-items: center;
   gap: 10px;
   padding: 8px 14px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(250, 204, 21, 0.35);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.55);
-  color: var(--brand-dark);
+  background: rgba(250, 204, 21, 0.18);
+  color: #1E3A8A;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -88,8 +88,8 @@ a {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--brand);
-  box-shadow: 0 0 0 6px rgba(159, 108, 59, 0.14);
+  background: #1E3A8A;
+  box-shadow: 0 0 0 6px rgba(30, 58, 138, 0.14);
 }
 
 h1,
