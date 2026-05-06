@@ -1,6 +1,6 @@
 # EO Consultoria Academica
 
-Site institucional da **EO Consultoria Academica**, desenvolvido em HTML e CSS puros para apresentar a consultoria, os servicos oferecidos, a trajetoria profissional da fundadora e os canais de contato.
+Site institucional da **EO Consultoria Academica**, desenvolvido em HTML e CSS puros para apresentar a consultoria, os servi&ccedil;os oferecidos, a trajet&oacute;ria profissional da fundadora e os canais de contato.
 
 ## Estrutura de pastas
 
@@ -36,7 +36,7 @@ O site esta dividido nas seguintes secoes:
 - `Hero`: apresentacao principal da marca, proposta de valor e chamada para contato
 - `Sobre a consultoria`: resumo institucional
 - `Sobre`: apresentacao da fundadora, formacao e experiencia
-- `Servicos`: lista dos principais atendimentos oferecidos
+- `Servi&ccedil;os`: lista dos principais atendimentos oferecidos
 - `Como funciona`: explicacao resumida do processo de atendimento
 - `Diferenciais`: pontos que fortalecem a confianca no servico
 - `Depoimentos`: prova social em formato textual
@@ -89,7 +89,7 @@ Edite os conteudos das secoes diretamente no HTML:
 
 - titulo principal da pagina
 - descricao da consultoria
-- lista de servicos
+- lista de servi&ccedil;os
 - FAQ
 - links e chamadas para contato
 
