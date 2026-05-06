@@ -623,6 +623,8 @@ p {
     width: 100%;
     justify-content: center;
     text-align: center;
+    font-size: 1rem;
+    padding: 10px 18px;
   }
 
   h1 {
