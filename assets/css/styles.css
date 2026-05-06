@@ -73,10 +73,10 @@ a {
   align-items: center;
   gap: 10px;
   padding: 8px 14px;
-  border: 1px solid rgba(250, 204, 21, 0.35);
+  border: 1px solid transparent;
   border-radius: 999px;
-  background: rgba(250, 204, 21, 0.18);
-  color: #1E3A8A;
+  background: #2563eb;
+  color: #ffffff;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -88,8 +88,8 @@ a {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #1E3A8A;
-  box-shadow: 0 0 0 6px rgba(30, 58, 138, 0.14);
+  background: #ffffff;
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.16);
 }
 
 h1,
@@ -233,19 +233,19 @@ p {
 
 .button-primary {
   color: #ffffff;
-  background: linear-gradient(135deg, #1E3A8A, #2A4EBF);
-  box-shadow: 0 16px 30px rgba(30, 58, 138, 0.24);
+  background: linear-gradient(135deg, #16a34a, #34d399);
+  box-shadow: 0 16px 30px rgba(22, 163, 74, 0.24);
 }
 
 .button-secondary {
-  border: 1px solid rgba(114, 74, 38, 0.22);
-  background: rgba(159, 108, 59, 0.12);
-  color: #724a26;
-  box-shadow: 0 12px 24px rgba(114, 74, 38, 0.12);
+  border: 1px solid transparent;
+  background: #FACC15;
+  color: #1F2937;
+  box-shadow: 0 12px 24px rgba(250, 204, 21, 0.18);
 }
 
 .button-secondary:hover {
-  background: rgba(159, 108, 59, 0.18);
+  background: #f7c300;
 }
 
 .hero-panel,
