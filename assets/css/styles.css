@@ -54,6 +54,15 @@ a {
   padding: 88px 0;
 }
 
+.problem-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.problem-section .card {
+  padding: 32px;
+}
+
 .section-header {
   max-width: 760px;
   margin-bottom: 36px;
