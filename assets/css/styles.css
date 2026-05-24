@@ -68,6 +68,56 @@ a {
   background: #ffffff;
 }
 
+.premium-title {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  max-width: 860px;
+  margin-top: 20px;
+  padding: clamp(18px, 3vw, 28px) clamp(20px, 4vw, 38px);
+  border: 1px solid rgba(196, 154, 90, 0.24);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(255, 248, 232, 0.72)),
+    linear-gradient(90deg, rgba(244, 196, 72, 0.18), transparent 58%);
+  box-shadow: 0 22px 60px rgba(43, 43, 43, 0.08), 0 0 34px rgba(244, 196, 72, 0.12);
+  animation: titleReveal 680ms ease both;
+}
+
+.premium-title::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 28px;
+  left: 28px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 154, 90, 0.8), transparent);
+}
+
+.premium-title::after {
+  content: "";
+  position: absolute;
+  right: 28px;
+  bottom: 16px;
+  left: 28px;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(244, 196, 72, 0.46), rgba(196, 154, 90, 0.14));
+  pointer-events: none;
+}
+
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .testimonials-section {
   overflow: hidden;
   background:
@@ -83,14 +133,6 @@ a {
 
 .testimonials-header {
   margin-bottom: 24px;
-}
-
-.testimonials-header h2 {
-  display: inline-block;
-  padding: 0 8px;
-  background: linear-gradient(180deg, transparent 54%, rgba(244, 196, 72, 0.42) 54%);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
 }
 
 .clients-intro {
@@ -605,57 +647,170 @@ p {
 .services-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
+  gap: 28px;
+}
+
+.services-lead {
+  max-width: 760px;
+  margin-top: 24px;
+  color: #4f4038;
+  font-size: clamp(1rem, 1.45vw, 1.12rem);
+  line-height: 1.8;
 }
 
 .service-card {
   position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  padding: 30px;
-  border: 1px solid rgba(159, 108, 59, 0.16);
-  background: #ffffff;
-  box-shadow: 0 12px 30px rgba(43, 43, 43, 0.07);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  padding: clamp(26px, 3vw, 36px);
+  border: 1px solid rgba(196, 154, 90, 0.2);
+  border-radius: 26px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 249, 239, 0.84)),
+    #ffffff;
+  box-shadow: 0 18px 44px rgba(43, 43, 43, 0.075);
+  animation: serviceCardIn 620ms ease both;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 60ms;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.service-card:nth-child(4) {
+  animation-delay: 180ms;
+}
+
+.service-card:nth-child(5) {
+  animation-delay: 240ms;
+}
+
+.service-card:nth-child(6) {
+  animation-delay: 300ms;
+}
+
+.service-card:nth-child(7) {
+  animation-delay: 360ms;
+}
+
+.service-card:nth-child(8) {
+  animation-delay: 420ms;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(244, 196, 72, 0.16), transparent 44%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+  z-index: -1;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  right: -46px;
+  bottom: -54px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(196, 154, 90, 0.12);
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .service-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(196, 154, 90, 0.34);
-  box-shadow: 0 18px 42px rgba(43, 43, 43, 0.1);
+  transform: translateY(-6px);
+  border-color: rgba(196, 154, 90, 0.42);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(255, 246, 225, 0.92)),
+    #ffffff;
+  box-shadow: 0 26px 66px rgba(43, 43, 43, 0.12);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(196, 154, 90, 0.28);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff, rgba(255, 245, 222, 0.88));
+  color: #b8841f;
+  box-shadow: 0 14px 30px rgba(196, 154, 90, 0.14);
+  transition: transform 220ms ease, box-shadow 220ms ease, color 220ms ease;
+}
+
+.service-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card:hover .service-icon {
+  transform: translateY(-2px) scale(1.04);
+  color: #9f6c3b;
+  box-shadow: 0 18px 38px rgba(196, 154, 90, 0.2);
 }
 
 .service-card strong {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
   width: fit-content;
-  margin-bottom: 16px;
-  padding: 10px 16px;
+  margin-bottom: 18px;
+  padding: 9px 14px;
   border-radius: 999px;
-  background: rgba(196, 154, 90, 0.14);
-  color: #2b2b2b;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
+  background: rgba(196, 154, 90, 0.12);
+  color: #7a552f;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.service-card strong::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #c49a5a;
-}
-
 .service-card h3 {
-  margin-bottom: 14px;
-  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  max-width: 96%;
+  margin-bottom: 16px;
+  color: #2b2b2b;
+  font-size: clamp(1.44rem, 2.1vw, 1.86rem);
+  line-height: 1.12;
 }
 
 .service-card p {
   margin-top: auto;
+  color: #5f4d44;
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+@keyframes serviceCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .steps-grid,
@@ -891,6 +1046,10 @@ p {
     padding: 16px;
   }
 
+  .service-card {
+    padding: 28px;
+  }
+
   .hero-panel {
     padding: 14px;
   }
@@ -918,6 +1077,50 @@ p {
 
   .testimonial-card {
     padding: 14px;
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+
+  .services-lead {
+    margin-top: 20px;
+    line-height: 1.72;
+  }
+
+  .service-card {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .service-card:hover {
+    transform: none;
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 18px;
+    border-radius: 16px;
+  }
+
+  .service-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .premium-title {
+    border-radius: 20px;
+  }
+
+  .premium-title::before {
+    right: 20px;
+    left: 20px;
+  }
+
+  .premium-title::after {
+    right: 20px;
+    left: 20px;
   }
 
   .clients-intro {
@@ -1031,6 +1234,14 @@ p {
 
   .testimonial-card {
     padding: 12px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-card h3 {
+    max-width: none;
   }
 
   .clients-closing-quote {
