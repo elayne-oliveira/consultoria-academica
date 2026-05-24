@@ -69,7 +69,127 @@ a {
 }
 
 .testimonials-section {
-  background: #faf7f2;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(250, 247, 242, 0.96)),
+    #faf7f2;
+}
+
+.testimonials-content {
+  display: grid;
+  justify-items: stretch;
+  text-align: left;
+}
+
+.testimonials-header {
+  margin-bottom: 24px;
+}
+
+.testimonials-header h2 {
+  display: inline-block;
+  padding: 0 8px;
+  background: linear-gradient(180deg, transparent 54%, rgba(244, 196, 72, 0.42) 54%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.clients-intro {
+  max-width: 760px;
+  margin: 0 0 42px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.clients-closing-quote {
+  width: min(100%, 920px);
+  margin: 48px auto 0;
+  padding: clamp(30px, 5vw, 54px);
+  border: 1px solid rgba(196, 154, 90, 0.24);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 22px 58px rgba(43, 43, 43, 0.08);
+  text-align: left;
+  animation: clientsQuoteIn 680ms ease both;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.clients-closing-quote:hover {
+  transform: translateY(-4px);
+  border-color: rgba(196, 154, 90, 0.4);
+  box-shadow: 0 28px 72px rgba(43, 43, 43, 0.11);
+}
+
+.clients-closing-quote blockquote {
+  position: relative;
+  max-width: 800px;
+  margin: 0;
+  padding-left: 24px;
+  color: #2b2b2b;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.28rem, 2.35vw, 1.72rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.42;
+}
+
+.clients-closing-quote blockquote::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 0;
+  width: 3px;
+  background: #c49a5a;
+  border-radius: 999px;
+}
+
+.clients-closing-quote figcaption {
+  margin-top: 24px;
+  color: #7a6254;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.14rem, 2vw, 1.34rem);
+  font-weight: 600;
+}
+
+@keyframes clientsQuoteIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.results-section {
+  background: #ffffff;
+  color: #2b2b2b;
+}
+
+.results-content {
+  display: grid;
+  justify-items: start;
+  text-align: left;
+}
+
+.results-content h2 {
+  max-width: 760px;
+}
+
+.results-content p {
+  margin-top: 18px;
+  color: #2b2b2b;
+  font-size: clamp(1rem, 1.8vw, 1.22rem);
+}
+
+.results-chart {
+  width: min(96%, 1060px);
+  margin: 42px auto 0;
+  border-radius: 24px;
+  box-shadow: 0 20px 48px rgba(43, 43, 43, 0.08);
 }
 
 .problem-section {
@@ -288,6 +408,19 @@ p {
   background: #b88a45;
 }
 
+.button-whatsapp,
+.hero .button-whatsapp {
+  color: #ffffff;
+  background: #16a34a;
+  box-shadow: 0 14px 28px rgba(22, 163, 74, 0.24);
+}
+
+.button-whatsapp:hover,
+.hero .button-whatsapp:hover {
+  background: #15803d;
+  box-shadow: 0 18px 34px rgba(21, 128, 61, 0.28);
+}
+
 .button-secondary {
   border: 1px solid transparent;
   background: #c49a5a;
@@ -301,13 +434,13 @@ p {
 
 .button-instagram {
   color: #ffffff;
-  background: #c49a5a;
-  box-shadow: 0 14px 28px rgba(196, 154, 90, 0.22);
+  background: linear-gradient(135deg, #405de6 0%, #833ab4 32%, #c13584 58%, #e1306c 78%, #fd1d1d 100%);
+  box-shadow: 0 14px 28px rgba(193, 53, 132, 0.24);
 }
 
 .button-instagram:hover {
-  background: #b88a45;
-  box-shadow: 0 18px 34px rgba(184, 138, 69, 0.26);
+  background: linear-gradient(135deg, #3651d4 0%, #7433a3 32%, #ad2f78 58%, #cb2b60 78%, #e21a1a 100%);
+  box-shadow: 0 18px 34px rgba(193, 53, 132, 0.3);
 }
 
 .hero-panel,
@@ -413,7 +546,7 @@ p {
   padding: 16px 18px;
   border-radius: 18px;
   background: rgba(35, 24, 21, 0.88);
-  color: #f6ede2;
+  color: #ffffff;
   box-shadow: 0 18px 38px rgba(35, 24, 21, 0.2);
 }
 
@@ -426,7 +559,12 @@ p {
 
 .floating-badge span {
   font-size: 0.92rem;
-  color: rgba(246, 237, 226, 0.86);
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.floating-badge-description {
+  color: #ffffff !important;
 }
 
 .card {
@@ -782,6 +920,21 @@ p {
     padding: 14px;
   }
 
+  .clients-intro {
+    margin-bottom: 32px;
+    line-height: 1.75;
+  }
+
+  .clients-closing-quote {
+    margin-top: 36px;
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  .clients-closing-quote:hover {
+    transform: none;
+  }
+
   .hero-panel {
     padding: 12px;
   }
@@ -878,6 +1031,10 @@ p {
 
   .testimonial-card {
     padding: 12px;
+  }
+
+  .clients-closing-quote {
+    padding: 24px 16px;
   }
 
   .hero-panel {
