@@ -18,129 +18,47 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Barra de Utilidades Superior -->
-  <div class="top-utility-bar">
-    <div class="container flex-row-between">
-      <div class="top-links">
-        <a href="#faq">Pol&iacute;tica de Privacidade</a>
-        <a href="#consultoria">Sobre a Consultoria</a>
-        <a href="#servicos">Atendimento</a>
-        <a href="#contato">Contato</a>
-      </div>
-      <div class="top-info">
-        <a href="mailto:eoconsultoria.academica@gmail.com" class="info-link">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          eoconsultoria.academica@gmail.com
+  <header class="hero" id="inicio">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="#inicio" aria-label="EO Consultoria Acad&ecirc;mica">
+          <img src="assets/images/branding/Logo marca.png" alt="Logo da EO Consultoria Acad&ecirc;mica">
+          <div>
+            <strong class="brand-highlight">EO Consultoria Acad&ecirc;mica</strong>
+            <span>Orienta&ccedil;&atilde;o acad&ecirc;mica com &eacute;tica, rigor metodol&oacute;gico e compromisso cient&iacute;fico.</span>
+          </div>
         </a>
-        <a href="https://wa.me/5598985052987?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+consultoria+acad%C3%AAmica." target="_blank" rel="noreferrer" class="info-link">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          (98) 98505-2987
-        </a>
+        <nav class="nav" aria-label="Navega&ccedil;&atilde;o principal">
+          <a href="#consultoria">Consultoria</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Servi&ccedil;os</a>
+          <a href="#etapas">Como funciona</a>
+          <a href="#faq">D&uacute;vidas</a>
+          <a href="#contato">Contato</a>
+        </nav>
       </div>
-    </div>
-  </div>
 
-  <!-- Barra de Navegação Principal -->
-  <div class="main-nav-bar">
-    <div class="container flex-row-between">
-      <a class="nav-brand" href="#inicio" aria-label="EO Consultoria Acad&ecirc;mica">
-        <img src="assets/images/branding/Logo marca.png" alt="Logo da EO Consultoria Acad&ecirc;mica">
-      </a>
-      <nav class="nav-grid" aria-label="Navega&ccedil;&atilde;o em etapas">
-        <a href="#inicio" class="nav-grid-item">
-          <span class="nav-num">01</span>
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              In&iacute;cio
-            </span>
-            <span class="nav-desc">Vis&atilde;o geral</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <span class="nav-num">02</span>
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Projetos
-            </span>
-            <span class="nav-desc">Estruture sua pesquisa</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <span class="nav-num">03</span>
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
-              Escrita
-            </span>
-            <span class="nav-desc">M&eacute;todo e clareza</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <span class="nav-num">04</span>
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-              ABNT
-            </span>
-            <span class="nav-desc">Norma sem ansiedade</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <span class="nav-num">05</span>
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-              Defesa
-            </span>
-            <span class="nav-desc">Apresente com seguran&ccedil;a</span>
-          </div>
-        </a>
-        <a href="#contato" class="nav-grid-item">
-          <span class="nav-num">06</span>
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              Contato
-            </span>
-            <span class="nav-desc">Fale conosco</span>
-          </div>
-        </a>
-      </nav>
-    </div>
-  </div>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-title-wrapper">
-          <span class="hero-eyebrow">EO CONSULTORIA ACAD&Ecirc;MICA</span>
-          <h1>Consultoria acad&ecirc;mica com m&eacute;todo, clareza e presen&ccedil;a.</h1>
-        </div>
-        <p class="hero-subtitle">
-          Do projeto &agrave; defesa, orienta&ccedil;&atilde;o para transformar ideias em produ&ccedil;&atilde;o cient&iacute;fica com seguran&ccedil;a, organiza&ccedil;&atilde;o e rigor.
-        </p>
-        <div class="hero-badges" aria-label="Etapas e &Aacute;reas de Atendimento">
-          <span class="hero-badge">Pesquisa</span>
-          <span class="hero-badge">Escrita</span>
-          <span class="hero-badge">ABNT</span>
-          <span class="hero-badge">Defesa</span>
-          <span class="hero-badge">Publica&ccedil;&atilde;o</span>
-        </div>
-      </div>
-      <div class="hero-widget-panel">
-        <div class="hero-widget-card">
-          <div class="card-glow-bar"></div>
-          <h2>Qual etapa precisa de apoio?</h2>
-          <a class="button button-primary widget-button" href="#servicos">
-            Encontrar meu servi&ccedil;o
-          </a>
-          <p class="widget-subtext">
-            Atendimento para TCC, artigos, projetos, revis&atilde;o, formata&ccedil;&atilde;o e defesa.
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Transformando trajet&oacute;rias acad&ecirc;micas desde 2014</h1>
+          <p>
+            &ldquo;Consultoria especializada em orienta&ccedil;&atilde;o acad&ecirc;mica, produ&ccedil;&atilde;o cient&iacute;fica e normaliza&ccedil;&atilde;o de trabalhos.&rdquo;
           </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary button-whatsapp"
+              href="https://wa.me/5598985052987?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+consultoria+acad%C3%AAmica."
+              target="_blank"
+              rel="noreferrer"
+            >
+              Falar no WhatsApp
+            </a>
+          </div>
         </div>
+
+        <aside class="hero-panel" aria-label="Foto de Elayne Oliveira">
+          <img class="hero-photo" src="assets/images/profile/elayne-livro-rosa.png" alt="Foto profissional de Elayne Oliveira">
+        </aside>
       </div>
     </div>
   </header>
