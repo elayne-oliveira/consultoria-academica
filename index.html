@@ -11,110 +11,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Barra de Utilidades Superior -->
-  <div class="top-utility-bar">
-    <div class="container flex-row-between">
-      <div class="top-links">
-        <a href="#faq">Pol&iacute;tica de Privacidade</a>
-        <a href="#consultoria">Sobre a Consultoria</a>
-        <a href="#servicos">Atendimento</a>
-        <a href="#contato">Contato</a>
-      </div>
-      <div class="top-info">
-        <a href="mailto:eoconsultoria.academica@gmail.com" class="info-link">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          eoconsultoria.academica@gmail.com
-        </a>
-        <a href="https://wa.me/5598985052987?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+consultoria+acad%C3%AAmica." target="_blank" rel="noreferrer" class="info-link">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          (98) 98505-2987
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Barra de Navegação Principal -->
-  <div class="main-nav-bar">
-    <div class="container flex-row-between">
+  <header class="main-nav-bar">
+    <div class="container site-nav">
       <a class="nav-brand" href="#inicio" aria-label="EO Consultoria Acad&ecirc;mica">
         <img src="assets/images/branding/Logo marca.png" alt="Logo da EO Consultoria Acad&ecirc;mica">
       </a>
-      <nav class="nav-grid" aria-label="Navega&ccedil;&atilde;o em etapas">
-        <a href="#inicio" class="nav-grid-item">
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              In&iacute;cio
-            </span>
-            <span class="nav-desc">Vis&atilde;o geral</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Projetos
-            </span>
-            <span class="nav-desc">Estruture sua pesquisa</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
-              Escrita
-            </span>
-            <span class="nav-desc">M&eacute;todo e clareza</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-              ABNT
-            </span>
-            <span class="nav-desc">Norma sem ansiedade</span>
-          </div>
-        </a>
-        <a href="#servicos" class="nav-grid-item">
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-              Defesa
-            </span>
-            <span class="nav-desc">Apresente com seguran&ccedil;a</span>
-          </div>
-        </a>
-        <a href="#contato" class="nav-grid-item">
-          <div class="nav-content">
-            <span class="nav-title">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              Contato
-            </span>
-            <span class="nav-desc">Fale conosco</span>
-          </div>
-        </a>
+      <nav class="site-navigation" aria-label="Navega&ccedil;&atilde;o principal">
+        <a href="#inicio">In&iacute;cio</a>
+        <a href="#consultoria">Sobre</a>
+        <a href="#servicos">Servi&ccedil;os</a>
+        <a href="#faq">D&uacute;vidas</a>
       </nav>
+      <a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">&rarr;</span></a>
     </div>
-  </div>
-
+  </header>
   <!-- Hero Section -->
-  <header class="hero">
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-title-wrapper">
-          <span class="hero-eyebrow">EO CONSULTORIA ACAD&Ecirc;MICA</span>
-          <h1>Consultoria acad&ecirc;mica com m&eacute;todo, clareza e presen&ccedil;a.</h1>
+          <span class="hero-eyebrow"><span class="brand-highlight">EO CONSULTORIA ACAD&Ecirc;MICA</span></span>
+          <h1 id="hero-title"><span class="brand-highlight">Seu trabalho acad&ecirc;mico,</span> com clareza e m&eacute;todo.</h1>
         </div>
         <p class="hero-subtitle">
-          Do projeto &agrave; defesa, orienta&ccedil;&atilde;o para transformar ideias em produ&ccedil;&atilde;o cient&iacute;fica com seguran&ccedil;a, organiza&ccedil;&atilde;o e rigor.
+          Orienta&ccedil;&atilde;o do projeto &agrave; defesa, com seguran&ccedil;a, organiza&ccedil;&atilde;o e rigor.
         </p>
+        <div class="hero-actions">
+          <a
+            class="button button-primary hero-cta-primary"
+            href="https://wa.me/5598985052987?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+consultoria+acad%C3%AAmica."
+            target="_blank"
+            rel="noreferrer"
+          >
+            Converse sobre seu projeto <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="hero-cta-secondary" href="#servicos">Conhe&ccedil;a os servi&ccedil;os</a>
+        </div>
         <div class="hero-badges" aria-label="Etapas e &Aacute;reas de Atendimento">
           <span class="hero-badge">Pesquisa</span>
           <span class="hero-badge">Escrita</span>
@@ -124,19 +62,17 @@
         </div>
       </div>
       <div class="hero-widget-panel">
-        <div class="hero-widget-card">
-          <div class="card-glow-bar"></div>
-          <h2>Qual etapa precisa de apoio?</h2>
-          <a class="button button-primary widget-button" href="#servicos">
-            Encontrar meu servi&ccedil;o
-          </a>
-          <p class="widget-subtext">
-            Atendimento para TCC, artigos, projetos, revis&atilde;o, formata&ccedil;&atilde;o e defesa.
-          </p>
-        </div>
+        <figure class="hero-portrait-card">
+          <img src="assets/images/profile/elayne.jpg" alt="Elayne Oliveira em seu espa&ccedil;o de trabalho, ao lado da identidade da EO Consultoria Acad&ecirc;mica">
+          <figcaption>
+            <span>Profa. Esp.</span>
+            <strong>Elayne Oliveira</strong>
+            <span>Consultoria acad&ecirc;mica com acompanhamento humano e personalizado.</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
-  </header>
+  </section>
 
   <main>
     <section class="section" id="consultoria">
@@ -150,7 +86,7 @@
         </div>
 
         <div>
-          <span class="eyebrow">Conhe&ccedil;a a fundadora da EO Consultoria Acad&ecirc;mica</span>
+          <span class="eyebrow">Conhe&ccedil;a a fundadora da <span class="brand-highlight">EO Consultoria Acad&ecirc;mica</span></span>
           <h2 class="premium-title">Forma&ccedil;&atilde;o acad&ecirc;mica e experi&ecirc;ncia pedag&oacute;gica a servi&ccedil;o do seu projeto.</h2>
           <div class="pill-list" aria-label="Forma&ccedil;&atilde;o acad&ecirc;mica">
             <span><strong>Forma&ccedil;&atilde;o acad&ecirc;mica:</strong></span>
@@ -171,6 +107,14 @@
       </div>
     </section>
 
+    <section class="audience-band" aria-label="P&uacute;blico atendido pela consultoria">
+      <div class="container">
+        <p>
+          A <span class="brand-highlight">EO Consultoria Acad&ecirc;mica</span> &eacute; voltada a estudantes de gradua&ccedil;&atilde;o, p&oacute;s-gradua&ccedil;&atilde;o lato sensu ou stricto sensu, pesquisadores(as) e professores(as) que buscam apoio acad&ecirc;mico com m&eacute;todo, clareza e responsabilidade.
+        </p>
+      </div>
+    </section>
+
     <section class="section" id="servicos">
       <div class="container">
         <div class="section-header">
@@ -179,6 +123,7 @@
         </div>
 
         <div class="services-grid">
+          <h3 class="service-group-title">Pesquisa e produ&ccedil;&atilde;o acad&ecirc;mica</h3>
           <article class="service-card service-research" tabindex="0">
             <div class="card-accent" aria-hidden="true"></div>
             <div class="service-head">
@@ -198,7 +143,7 @@
               <li><span class="service-list-title">TCC I (Projeto de Pesquisa)</span></li>
               <li><span class="service-list-title">TCC II (Desenvolvimento da Pesquisa)</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-tcc" tabindex="0">
@@ -217,7 +162,7 @@
               <li><span class="service-list-title">TCC (Monografia)</span></li>
               <li><span class="service-list-title">TCC (Artigo Cient&iacute;fico)</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-tcc" tabindex="0">
@@ -235,7 +180,7 @@
               <li><span class="service-list-title">Pr&eacute;-Projeto de Mestrado</span></li>
               <li><span class="service-list-title">Projeto de Mestrado</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-tcc" tabindex="0">
@@ -254,7 +199,7 @@
               <li><span class="service-list-title">TCC II</span></li>
               <li><span class="service-list-title">TCC III</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-research" tabindex="0">
@@ -268,7 +213,7 @@
               </div>
               <h3 class="service-title">Artigos Cient&iacute;ficos (Peri&oacute;dicos)</h3>
             </div>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-education" tabindex="0">
@@ -295,7 +240,7 @@
               <li><span class="service-list-title">Projeto Social Educativo</span></li>
               <li><span class="service-list-title">Livros Did&aacute;ticos</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-reports" tabindex="0">
@@ -310,9 +255,10 @@
               </div>
               <h3 class="service-title">Relat&oacute;rios Acad&ecirc;micos</h3>
             </div>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
+          <h3 class="service-group-title">Apresenta&ccedil;&otilde;es e defesa</h3>
           <article class="service-card service-presentation" tabindex="0">
             <div class="card-accent" aria-hidden="true"></div>
             <div class="service-head">
@@ -330,9 +276,10 @@
               <li><span class="service-list-title">Slides para Eventos Cient&iacute;ficos</span></li>
               <li><span class="service-list-title">Apresenta&ccedil;&atilde;o e Defesa de TCC</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
+          <h3 class="service-group-title">Revis&atilde;o e formata&ccedil;&atilde;o</h3>
           <article class="service-card service-review" tabindex="0">
             <div class="card-accent" aria-hidden="true"></div>
             <div class="service-head">
@@ -345,7 +292,7 @@
               </div>
               <h3 class="service-title">Revis&atilde;o Textual Acad&ecirc;mica</h3>
             </div>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-review" tabindex="0">
@@ -360,7 +307,7 @@
               </div>
               <h3 class="service-title">Revis&atilde;o Ortogr&aacute;fica e Gramatical</h3>
             </div>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-abnt" tabindex="0">
@@ -385,9 +332,10 @@
               <li><span class="service-list-title">Ajustes P&oacute;s-Banca</span></li>
               <li><span class="service-list-title">Adequa&ccedil;&atilde;o &agrave;s Normas Institucionais</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
+          <h3 class="service-group-title">Curr&iacute;culos e carreira</h3>
           <article class="service-card service-lattes" tabindex="0">
             <div class="card-accent" aria-hidden="true"></div>
             <div class="service-head">
@@ -405,7 +353,7 @@
               <li><span class="service-list-title">Cria&ccedil;&atilde;o de Curr&iacute;culo Lattes</span></li>
               <li><span class="service-list-title">Atualiza&ccedil;&atilde;o de Curr&iacute;culo Lattes</span></li>
             </ul>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
 
           <article class="service-card service-lattes" tabindex="0">
@@ -421,7 +369,7 @@
               </div>
               <h3 class="service-title">Curr&iacute;culo Profissional</h3>
             </div>
-            <a class="service-cta" href="#">Saiba mais &rarr;</a>
+            <a class="service-cta" href="#contato">Conversar sobre este servi&ccedil;o &rarr;</a>
           </article>
         </div>
       </div>
@@ -508,50 +456,40 @@
         </div>
 
         <p class="clients-intro">
-          Ao longo desses anos, passaram pela EO Consultoria Acad&ecirc;mica muitos estudantes, professores e pesquisadores. Aqui est&atilde;o alguns registros de opini&otilde;es e avalia&ccedil;&otilde;es de clientes que confiaram no meu trabalho e compartilharam suas experi&ecirc;ncias ao longo do processo de acompanhamento acad&ecirc;mico.
+          Alguns relatos de quem contou com a EO Consultoria Acad&ecirc;mica durante sua trajet&oacute;ria.
         </p>
 
         <div class="testimonials-grid">
           <article class="quote-card testimonial-card">
-            <span>Aluno 02</span>
-            <img src="assets/images/testimonials/avaliacao-02.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
+            <span class="testimonial-topic">Coment&aacute;rio</span>
+            <blockquote>“Com a orienta&ccedil;&atilde;o da Elayne, consegui organizar meu processo de escrita de forma clara e objetiva.”</blockquote>
+            <cite>Prof. Evenilson</cite>
           </article>
-
           <article class="quote-card testimonial-card">
-            <span>Aluno 03</span>
-            <img src="assets/images/testimonials/avaliacao-03.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
+            <span class="testimonial-topic">Coment&aacute;rio</span>
+            <blockquote>“Ganhei 10! Voc&ecirc; &eacute; uma excelente profissional.”</blockquote>
+            <cite>Darly, estudante</cite>
           </article>
-
           <article class="quote-card testimonial-card">
-            <span>Aluno 04</span>
-            <img src="assets/images/testimonials/avaliacao-04.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
-          </article>
-
-          <article class="quote-card testimonial-card">
-            <span>Aluno 05</span>
-            <img src="assets/images/testimonials/avaliacao-05.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
-          </article>
-
-          <article class="quote-card testimonial-card">
-            <span>Aluno 06</span>
-            <img src="assets/images/testimonials/avaliacao-06.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
-          </article>
-
-          <article class="quote-card testimonial-card">
-            <span>Aluno 07</span>
-            <img src="assets/images/testimonials/avaliacao-07.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
-          </article>
-
-          <article class="quote-card testimonial-card">
-            <span>Aluno 08</span>
-            <img src="assets/images/testimonials/avaliacao-08.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
-          </article>
-
-          <article class="quote-card testimonial-card">
-            <span>Aluno 09</span>
-            <img src="assets/images/testimonials/avaliacao-09.jpeg" alt="Print de avalia&ccedil;&atilde;o de cliente da EO Consultoria Acad&ecirc;mica">
+            <span class="testimonial-topic">Coment&aacute;rio</span>
+            <blockquote>“Ajudou demais, obrigada!”</blockquote>
+            <cite>Josiane Cunha</cite>
           </article>
         </div>
+
+        <details class="testimonial-archive">
+          <summary>Ver registros originais dos depoimentos</summary>
+          <div class="testimonial-archive-grid">
+            <img src="assets/images/testimonials/avaliacao-02.jpeg" alt="Registro original do depoimento do Prof. Evenilson sobre o acompanhamento do TCC">
+            <img src="assets/images/testimonials/avaliacao-03.jpeg" alt="Continua&ccedil;&atilde;o do depoimento do Prof. Evenilson sobre o acompanhamento do TCC">
+            <img src="assets/images/testimonials/avaliacao-04.jpeg" alt="Registro original de conversa com Darly, estudante">
+            <img src="assets/images/testimonials/avaliacao-05.jpeg" alt="Registro de conversa e resultado acad&ecirc;mico compartilhado por cliente">
+            <img src="assets/images/testimonials/avaliacao-06.jpeg" alt="Registro original de mensagem de Josiane Cunha">
+            <img src="assets/images/testimonials/avaliacao-07.jpeg" alt="Registro original de avalia&ccedil;&atilde;o de cliente">
+            <img src="assets/images/testimonials/avaliacao-08.jpeg" alt="Registro original de avalia&ccedil;&atilde;o de cliente">
+            <img src="assets/images/testimonials/avaliacao-09.jpeg" alt="Registro original de avalia&ccedil;&atilde;o de cliente">
+          </div>
+        </details>
 
         <figure class="clients-closing-quote">
           <blockquote>
@@ -575,7 +513,7 @@
 
         <figure class="results-quote">
           <blockquote>
-            &ldquo;A EO Consultoria Acad&ecirc;mica, ao longo desses anos, construiu muito mais do que resultados: construiu hist&oacute;rias, mem&oacute;rias e conquistas acad&ecirc;micas ao lado de estudantes que confiaram no meu trabalho. &Eacute; emocionante fazer parte da trajet&oacute;ria e do crescimento de cada aluno.&rdquo;
+            &ldquo;A <span class="brand-highlight">EO Consultoria Acad&ecirc;mica</span>, ao longo desses anos, construiu muito mais do que resultados: construiu hist&oacute;rias, mem&oacute;rias e conquistas acad&ecirc;micas ao lado de estudantes que confiaram no meu trabalho. &Eacute; emocionante fazer parte da trajet&oacute;ria e do crescimento de cada aluno.&rdquo;
           </blockquote>
           <figcaption>&mdash; Elayne Oliveira, Consultora Acad&ecirc;mica</figcaption>
         </figure>
@@ -666,7 +604,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 EO Consultoria Academica. Todos os direitos reservados.</p>
+      <p>&copy; 2026 <span class="brand-highlight">EO Consultoria Academica</span>. Todos os direitos reservados.</p>
     </div>
   </footer>
 
