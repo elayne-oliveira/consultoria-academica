@@ -2626,3 +2626,38 @@ body {
     margin-left: 0;
   }
 }
+
+/* Ritmo de fundos e hierarquia de ações nas seções finais. */
+#etapas + .section {
+  background: #fffdfa;
+}
+
+.testimonials-section {
+  background: #f7f4ee;
+}
+
+.service-card .card-accent {
+  width: 100%;
+  height: 2px;
+  margin: 0 0 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand), rgba(189, 154, 98, 0.16));
+}
+
+.button-secondary {
+  border: 1px solid rgba(38, 52, 73, 0.3);
+  background: transparent;
+  color: var(--brand-dark);
+  box-shadow: none;
+}
+
+.button-secondary:hover {
+  border-color: var(--brand-dark);
+  background: rgba(38, 52, 73, 0.06);
+  color: var(--brand-dark);
+}
+
+.service-card .service-cta,
+.contact-links a {
+  color: var(--brand-dark);
+}
