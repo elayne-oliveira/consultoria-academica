@@ -2463,3 +2463,108 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Ajustes finais de hierarquia, ritmo e foco sem alterar a organização do conteúdo. */
+.hero .brand-highlight {
+  color: inherit;
+}
+
+.hero-title-highlight {
+  color: #d8bd8d;
+}
+
+#consultoria,
+#etapas,
+#faq {
+  background: #f7f4ee;
+}
+
+#servicos,
+.results-section,
+#contato {
+  background: #fffdfa;
+}
+
+#consultoria,
+#servicos,
+#etapas,
+.testimonials-section,
+.results-section,
+#faq,
+#contato {
+  border-bottom: 1px solid rgba(38, 52, 73, 0.08);
+}
+
+.service-card .service-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(189, 154, 98, 0.24);
+  border-radius: 13px;
+  background: #f4efe6;
+  color: var(--brand-dark);
+}
+
+.service-card .service-icon svg {
+  width: 23px;
+  height: 23px;
+  stroke-width: 1.6;
+}
+
+.site-navigation a:focus-visible,
+.nav-contact:focus-visible,
+.button:focus-visible,
+.service-cta:focus-visible,
+.testimonial-archive summary:focus-visible,
+.whatsapp-float:focus-visible {
+  outline: 2px solid var(--brand-dark);
+  outline-offset: 4px;
+}
+
+.service-card:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(189, 154, 98, 0.34);
+  box-shadow: 0 14px 30px rgba(24, 38, 58, 0.075);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 48px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.45rem, 9vw, 3.7rem);
+    line-height: 1.02;
+  }
+
+  .service-group-title {
+    margin-top: 24px;
+    padding-bottom: 9px;
+  }
+
+  .service-card {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: clamp(2.35rem, 10vw, 3.1rem);
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
