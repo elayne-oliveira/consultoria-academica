@@ -1831,11 +1831,11 @@ h2 {
 
 .eyebrow,
 .section-header .eyebrow {
-  padding: 7px 12px;
-  border: 1px solid rgba(196, 154, 90, 0.24);
-  background: rgba(196, 154, 90, 0.09);
+  padding: 8px 14px;
+  border: 1px solid rgba(140, 107, 55, 0.24);
+  background: #eee4d2;
   box-shadow: none;
-  color: #72562d;
+  color: #263449;
   font-size: 0.76rem;
   letter-spacing: 0.11em;
 }
