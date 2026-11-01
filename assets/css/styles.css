@@ -2290,6 +2290,14 @@ h2 {
   .services-grid {
     column-count: 1;
   }
+
+  body {
+    padding-bottom: 0;
+  }
+
+  .whatsapp-float {
+    display: none;
+  }
 }
 
 /* Acabamento de cores e componentes, preservando a estrutura da página. */
