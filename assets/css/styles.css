@@ -2568,3 +2568,24 @@ body {
     padding: 60px 0;
   }
 }
+
+/* Mantém a navegação junto à marca e o botão de contato no extremo oposto. */
+.site-nav {
+  justify-content: flex-start;
+}
+
+.site-navigation {
+  justify-content: flex-start;
+  margin-left: clamp(16px, 2.6vw, 36px);
+}
+
+.nav-contact {
+  margin-left: auto;
+}
+
+@media (max-width: 720px) {
+  .site-navigation {
+    justify-content: space-between;
+    margin-left: 0;
+  }
+}
