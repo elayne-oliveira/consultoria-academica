@@ -1832,10 +1832,10 @@ h2 {
 .eyebrow,
 .section-header .eyebrow {
   padding: 8px 14px;
-  border: 1px solid rgba(140, 107, 55, 0.24);
-  background: #eee4d2;
-  box-shadow: none;
-  color: #263449;
+  border: 1px solid #263b55;
+  background: #263b55;
+  box-shadow: 0 4px 12px rgba(24, 38, 58, 0.12);
+  color: #fffdfa;
   font-size: 0.76rem;
   letter-spacing: 0.11em;
 }
@@ -1843,7 +1843,7 @@ h2 {
 .eyebrow::before {
   width: 6px;
   height: 6px;
-  background: var(--brand-dark);
+  background: #d8bd8d;
   box-shadow: none;
 }
 
