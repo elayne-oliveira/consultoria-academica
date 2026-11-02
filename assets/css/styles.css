@@ -2709,16 +2709,6 @@ body {
   margin-bottom: 14px;
 }
 
-.professional-cv-service-image {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border: 1px solid rgba(38, 52, 73, 0.1);
-  border-radius: 12px;
-  object-fit: cover;
-  object-position: center 34%;
-  margin: 14px 0;
-}
-
 @media (max-width: 720px) {
   .site-navigation {
     justify-content: center;
