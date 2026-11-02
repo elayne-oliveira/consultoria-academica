@@ -2662,3 +2662,17 @@ body {
 .contact-links a {
   color: var(--brand-dark);
 }
+
+.nav-brand img {
+  width: auto;
+  height: 72px;
+  max-width: 96px;
+}
+
+@media (max-width: 720px) {
+  .nav-brand img {
+    width: auto;
+    height: 56px;
+    max-width: 76px;
+  }
+}
