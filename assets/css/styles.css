@@ -2695,7 +2695,8 @@ body {
 }
 
 .research-service-image,
-.specialization-service-image {
+.specialization-service-image,
+.tcc-service-image {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
