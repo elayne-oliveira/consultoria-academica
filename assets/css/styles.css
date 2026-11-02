@@ -2694,11 +2694,51 @@ body {
   color: #17263b;
 }
 
+.research-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 20px 24px;
+  margin-bottom: 22px;
+  column-span: all;
+  break-inside: avoid;
+}
+
+.research-feature .service-group-title {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.research-feature-image {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border: 1px solid rgba(38, 52, 73, 0.1);
+  border-radius: 18px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 14px 32px rgba(24, 38, 58, 0.1);
+}
+
+.research-feature .service-card {
+  margin: 0;
+}
+
 @media (max-width: 720px) {
   .site-navigation {
     justify-content: center;
     gap: 7px 14px;
     padding: 10px 12px;
     border-radius: 18px;
+  }
+
+  .research-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .research-feature-image {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 }
