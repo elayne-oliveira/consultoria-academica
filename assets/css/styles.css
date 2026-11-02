@@ -2571,8 +2571,8 @@ body {
 
 @media (max-width: 720px) {
   .site-nav {
-    flex-wrap: nowrap;
-    gap: clamp(6px, 1.5vw, 12px);
+    flex-wrap: wrap;
+    gap: 8px 12px;
   }
 
   .nav-brand {
@@ -2586,14 +2586,15 @@ body {
   }
 
   .site-navigation {
-    order: 0;
-    flex: 1 1 auto;
-    width: auto;
-    justify-content: flex-end;
-    gap: clamp(5px, 1.8vw, 12px);
+    order: 2;
+    flex: 1 0 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 12px;
     margin-left: 0;
-    padding-top: 0;
-    border-top: 0;
+    padding-top: 8px;
+    border-top: 1px solid rgba(38, 52, 73, 0.1);
   }
 
   .site-navigation a {
@@ -2622,7 +2623,7 @@ body {
 
 @media (max-width: 720px) {
   .site-navigation {
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-left: 0;
   }
 }
