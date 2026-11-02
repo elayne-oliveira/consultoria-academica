@@ -2709,6 +2709,14 @@ body {
   margin-bottom: 14px;
 }
 
+.education-service-image {
+  width: min(100%, 256px);
+  max-width: 256px;
+  aspect-ratio: 3 / 4;
+  object-position: center;
+  margin: 0 auto 14px;
+}
+
 @media (max-width: 720px) {
   .site-navigation {
     justify-content: center;
