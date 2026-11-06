@@ -2724,10 +2724,11 @@ body {
 .abnt-service-image {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 9;
   border: 1px solid rgba(38, 52, 73, 0.1);
   border-radius: 12px;
-  object-fit: cover;
+  background: #fff;
+  object-fit: contain;
   object-position: center;
   margin-bottom: 14px;
 }
