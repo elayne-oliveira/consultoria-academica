@@ -2883,6 +2883,26 @@ body {
   object-position: center top;
 }
 
+.hero-portrait-card {
+  aspect-ratio: auto;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-portrait-card::after {
+  display: none;
+}
+
+.hero-portrait-card img {
+  display: block;
+  height: auto;
+  object-fit: initial;
+  object-position: initial;
+}
+
 .hero-portrait-card figcaption span:first-child {
   color: #f0cf8f;
 }
