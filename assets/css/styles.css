@@ -2766,3 +2766,142 @@ body {
   }
 
 }
+
+/* Identidade visual inspirada na nova assinatura em dourado e marfim. */
+.main-nav-bar {
+  background: rgba(255, 250, 241, 0.96);
+  border-bottom-color: rgba(151, 101, 28, 0.16);
+}
+
+.site-navigation {
+  background: #f7ecd8;
+}
+
+.hero {
+  isolation: isolate;
+  color: #4d3214;
+  background:
+    radial-gradient(ellipse at 80% 48%, rgba(255, 255, 255, 0.72), transparent 44%),
+    linear-gradient(115deg, #f5e5c8 0%, #fff9ed 52%, #f5e9d5 100%);
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(68vw, 920px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(184, 125, 35, 0.32);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::before {
+  top: -76%;
+  left: -24%;
+  box-shadow: 0 0 0 8px rgba(184, 125, 35, 0.07), 0 0 0 16px rgba(184, 125, 35, 0.05);
+}
+
+.hero::after {
+  right: -34%;
+  bottom: -95%;
+  width: min(62vw, 820px);
+  border-color: rgba(184, 125, 35, 0.2);
+  box-shadow: 0 0 0 8px rgba(184, 125, 35, 0.06), 0 0 0 16px rgba(184, 125, 35, 0.04);
+}
+
+.hero-title-wrapper {
+  border-left-color: #bc842b;
+}
+
+.hero-eyebrow {
+  color: #93621d;
+  letter-spacing: 0.15em;
+}
+
+.hero h1 {
+  color: #513817;
+  font-size: clamp(2.8rem, 4.6vw, 4.35rem);
+  line-height: 1.04;
+}
+
+.hero-title-highlight {
+  color: #b27b24;
+}
+
+.hero-subtitle {
+  color: #705a3d;
+}
+
+.hero-cta-primary,
+.button-primary,
+.button-whatsapp,
+.whatsapp-float {
+  border-color: rgba(148, 98, 27, 0.25);
+  background: #bc842b;
+  color: #fffaf1;
+}
+
+.hero-cta-primary:hover,
+.button-primary:hover,
+.button-whatsapp:hover,
+.whatsapp-float:hover {
+  background: #a66f1d;
+  color: #fffaf1;
+}
+
+.hero-cta-secondary {
+  color: #72562d;
+}
+
+.hero-cta-secondary:hover {
+  color: #9b671c;
+}
+
+.hero-badge {
+  border-color: rgba(151, 101, 28, 0.18);
+  background: rgba(255, 255, 255, 0.56);
+  color: #70552e;
+}
+
+.hero-portrait-card {
+  width: min(100%, 430px);
+  aspect-ratio: 1;
+  border: 8px solid rgba(255, 255, 255, 0.78);
+  border-radius: 18px;
+  box-shadow: 0 24px 56px rgba(103, 70, 27, 0.18);
+}
+
+.hero-portrait-card::after {
+  inset: 56% 0 0;
+  background: linear-gradient(180deg, transparent, rgba(56, 37, 17, 0.78));
+}
+
+.hero-portrait-card img {
+  object-fit: contain;
+  object-position: center top;
+}
+
+.hero-portrait-card figcaption span:first-child {
+  color: #f0cf8f;
+}
+
+@media (max-width: 720px) {
+  .hero::before {
+    top: -20%;
+    left: -72%;
+    width: 120vw;
+  }
+
+  .hero::after {
+    right: -85%;
+    bottom: -34%;
+    width: 120vw;
+  }
+
+  .hero-portrait-card {
+    width: min(100%, 360px);
+    aspect-ratio: 1;
+  }
+}
