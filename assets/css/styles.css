@@ -3114,35 +3114,50 @@ body {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
+  gap: 10px;
+}
+
+.nav-brand-symbol {
+  position: relative;
+  display: block;
+  flex: 0 0 58px;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.nav-brand-symbol img {
+  position: absolute;
+  top: -4px;
+  left: -18px;
+  width: 94px;
+  max-width: none;
+  height: 94px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .nav-brand-copy {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
+  display: grid;
+  gap: 2px;
   color: #28231c;
   line-height: 1;
 }
 
 .nav-brand-copy strong {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 2rem;
+  font-size: 2.05rem;
   font-weight: 600;
   letter-spacing: -0.035em;
 }
 
-.nav-brand-copy em {
-  color: #a98948;
-  font-weight: 500;
-}
-
 .nav-brand-copy > span {
-  align-self: center;
   color: #6d6252;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.05rem;
-  font-style: italic;
+  font-size: 0.68rem;
   font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
 .site-navigation {
@@ -3471,12 +3486,26 @@ body {
     margin-right: auto;
   }
 
+  .nav-brand-symbol {
+    flex-basis: 46px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .nav-brand-symbol img {
+    top: -3px;
+    left: -14px;
+    width: 75px;
+    height: 75px;
+  }
+
   .nav-brand-copy strong {
     font-size: 1.72rem;
   }
 
   .nav-brand-copy > span {
-    font-size: 0.88rem;
+    font-size: 0.56rem;
+    letter-spacing: 0.06em;
   }
 
   .nav-contact {
@@ -3547,7 +3576,7 @@ body {
 
 @media (max-width: 420px) {
   .nav-brand-copy {
-    gap: 3px;
+    gap: 2px;
   }
 
   .nav-brand-copy strong {
@@ -3555,7 +3584,7 @@ body {
   }
 
   .nav-brand-copy > span {
-    font-size: 0.76rem;
+    font-size: 0.52rem;
   }
 
   .nav-contact {
