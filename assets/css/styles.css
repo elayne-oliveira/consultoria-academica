@@ -3118,22 +3118,11 @@ body {
 }
 
 .nav-brand-symbol {
-  position: relative;
   display: block;
-  flex: 0 0 58px;
-  width: 58px;
-  height: 58px;
-  overflow: hidden;
-  background: transparent;
-}
-
-.nav-brand-symbol img {
-  position: absolute;
-  top: -4px;
-  left: -18px;
-  width: 94px;
+  flex: 0 0 auto;
+  width: 68px;
+  height: auto;
   max-width: none;
-  height: 94px;
   object-fit: contain;
   mix-blend-mode: multiply;
 }
@@ -3475,16 +3464,7 @@ body {
   }
 
   .nav-brand-symbol {
-    flex-basis: 46px;
-    width: 46px;
-    height: 46px;
-  }
-
-  .nav-brand-symbol img {
-    top: -3px;
-    left: -14px;
-    width: 75px;
-    height: 75px;
+    width: 56px;
   }
 
   .nav-brand-copy {
