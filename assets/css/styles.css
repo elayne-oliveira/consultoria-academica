@@ -3139,25 +3139,13 @@ body {
 }
 
 .nav-brand-copy {
-  display: grid;
-  gap: 2px;
+  display: block;
   color: #28231c;
-  line-height: 1;
-}
-
-.nav-brand-copy strong {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 2.05rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  letter-spacing: -0.035em;
-}
-
-.nav-brand-copy > span {
-  color: #6d6252;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 1;
 }
 
 .site-navigation {
@@ -3499,13 +3487,8 @@ body {
     height: 75px;
   }
 
-  .nav-brand-copy strong {
-    font-size: 1.72rem;
-  }
-
-  .nav-brand-copy > span {
-    font-size: 0.56rem;
-    letter-spacing: 0.06em;
+  .nav-brand-copy {
+    font-size: 1.04rem;
   }
 
   .nav-contact {
@@ -3576,15 +3559,7 @@ body {
 
 @media (max-width: 420px) {
   .nav-brand-copy {
-    gap: 2px;
-  }
-
-  .nav-brand-copy strong {
-    font-size: 1.5rem;
-  }
-
-  .nav-brand-copy > span {
-    font-size: 0.52rem;
+    font-size: 0.94rem;
   }
 
   .nav-contact {
